@@ -21,6 +21,7 @@ resource "aws_s3_bucket_acl" "main" {
 }
 
 resource "aws_s3_bucket_versioning" "main" {
+  count  = var.versioning ? 1 : 0
   bucket = aws_s3_bucket.main.id
   versioning_configuration {
     status = "Enabled"

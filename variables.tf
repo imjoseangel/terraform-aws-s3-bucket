@@ -3,3 +3,9 @@ variable "name" {
   type        = string
   default     = "terraform-aws-s3-bucket"
 }
+
+variable "versioning" {
+  description = "Enable versioning"
+  type        = bool
+  default     = false
+}
