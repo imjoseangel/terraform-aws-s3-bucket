@@ -9,3 +9,9 @@ variable "versioning" {
   type        = bool
   default     = false
 }
+
+variable "sse_algorithm" {
+  description = "Server-side encryption algorithm. Valid values: AES256, aws:kms"
+  type        = string
+  default     = "aws:kms"
+}
