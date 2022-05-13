@@ -7,7 +7,7 @@ resource "aws_s3_bucket" "main" {
   force_destroy = false
 
   lifecycle {
-    prevent_destroy = var.prevent_destroy
+    prevent_destroy = true
   }
 
   tags = {

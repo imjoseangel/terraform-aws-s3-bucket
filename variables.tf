@@ -15,9 +15,3 @@ variable "sse_algorithm" {
   type        = string
   default     = "aws:kms"
 }
-
-variable "versioning" {
-  description = "Enable versioning"
-  type        = bool
-  default     = false
-}
